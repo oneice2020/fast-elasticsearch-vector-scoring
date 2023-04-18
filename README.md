@@ -11,7 +11,7 @@ give it a try.
 
 
 ## Elasticsearch version
-* master branch is designed for Elasticsearch 5.6.9.
+* current branch is designed for Elasticsearch 5.6.16.
 * for Elasticsearch 7.9.0 use branch `es-7.9.0`
 * for Elasticsearch 7.5.2 use branch `es-7.5.2`
 * for Elasticsearch 7.5.0 use branch `es-7.5.0`
@@ -25,7 +25,8 @@ give it a try.
 ## Maven configuration
 * Clone the project
 * `mvn package` to compile the plugin as a zip file
-* In the Elasticsearch root folder run `./bin/elasticsearch-plugin install file://<PATH_TO_ZIP>` to install plugin. for example: `./bin/elasticsearch-plugin install file:///Users/lior/dev/fast-elasticsearch-vector-scoring/target/releases/elasticsearch-binary-vector-scoring-5.6.9.zip`
+* In the Elasticsearch root folder run `./bin/elasticsearch-plugin install file://<PATH_TO_ZIP>` to install plugin. for example: `./bin/elasticsearch-plugin install 
+  file:///Users/lior/dev/fast-elasticsearch-vector-scoring/target/releases/elasticsearch-binary-vector-scoring-5.6.16.zip`
 
 
 
@@ -220,4 +221,3 @@ func convertBase64ToArray(base64Str string) ([]float32, error) {
 	* make sure that **all** the documents in your index contains the filed you specified in the `field` parameter.
 see more details [here](https://github.com/lior-k/fast-elasticsearch-vector-scoring/issues/6)
     * make sure that the filed you specified in the `field` parameter has a `binary` type in the index mapping
-
